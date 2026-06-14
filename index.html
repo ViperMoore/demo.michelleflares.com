@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michelle Flares — Demo Websites</title>
+  <meta name="description" content="Preview websites built for local UK businesses by Michelle Flares. Like what you see? Get your business online from £99.99." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brown-dark:   #2C1A0E;
+      --brown-mid:    #5C3D1E;
+      --brown-light:  #8B5E3C;
+      --cream:        #FDF6EE;
+      --cream-warm:   #F5E9D8;
+      --accent:       #C97D3A;
+      --text:         #1A1008;
+      --text-muted:   #7A5C40;
+      --white:        #FFFFFF;
+      --radius:       10px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--brown-dark);
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 58px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--cream);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-logo span { color: var(--accent); }
+
+    .nav-link {
+      font-size: 0.85rem;
+      color: rgba(253,246,238,0.7);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover { color: var(--cream); }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--cream);
+      color: var(--text);
+      text-align: center;
+      padding: 4rem 1.5rem 3.5rem;
+      border-bottom: 1px solid rgba(139,94,60,0.1);
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--brown-dark);
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: #C0355A;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 520px;
+      margin: 0 auto 2rem;
+      line-height: 1.65;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.4rem;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.15s;
+      border: none;
+    }
+
+    .btn:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--brown-dark);
+      border: 1.5px solid rgba(44,26,14,0.3);
+    }
+
+    /* ── HOW IT WORKS ── */
+    .how {
+      background: var(--cream-warm);
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(139,94,60,0.15);
+    }
+
+    .how p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    .steps {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .step {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.2rem;
+      max-width: 200px;
+      text-align: left;
+      border: 1px solid rgba(139,94,60,0.12);
+    }
+
+    .step-num {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      color: var(--white);
+      border-radius: 50%;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-align: center;
+      line-height: 28px;
+      margin-bottom: 0.75rem;
+    }
+
+    .step h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      color: var(--brown-dark);
+    }
+
+    .step p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ── DEMOS GRID ── */
+    .demos-section {
+      padding: 3.5rem 1.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--brown-dark);
+      margin-bottom: 0.4rem;
+    }
+
+    .section-sub {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .demos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    /* ── DEMO CARD ── */
+    .demo-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid rgba(139,94,60,0.13);
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.15s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .demo-card:hover {
+      box-shadow: 0 6px 24px rgba(44,26,14,0.12);
+      transform: translateY(-3px);
+    }
+
+    .card-thumb {
+      height: 130px;
+      background: var(--cream-warm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8rem;
+      border-bottom: 1px solid rgba(139,94,60,0.1);
+    }
+
+    .card-body {
+      padding: 1rem 1.1rem 1.2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .card-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+
+    .card-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--brown-dark);
+    }
+
+    .card-location {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .card-link {
+      margin-top: auto;
+      padding-top: 0.8rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* ── PLACEHOLDER CARD ── */
+    .demo-card.placeholder {
+      border-style: dashed;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .demo-card.placeholder .card-thumb {
+      font-size: 1.5rem;
+      color: var(--text-muted);
+    }
+
+    /* ── CONTACT STRIP ── */
+    .contact-strip {
+      background: var(--brown-dark);
+      color: var(--cream);
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    .contact-strip h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-strip p {
+      font-size: 0.95rem;
+      color: rgba(253,246,238,0.75);
+      margin-bottom: 1.75rem;
+      max-width: 460px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.65rem 1.3rem;
+      border-radius: var(--radius);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-btn:hover { opacity: 0.85; }
+
+    .contact-btn.whatsapp { background: #25D366; color: var(--white); }
+    .contact-btn.email    { background: var(--accent); color: var(--white); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--brown-dark);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 1.2rem 1.5rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: rgba(253,246,238,0.4);
+    }
+
+    footer a { color: rgba(253,246,238,0.55); text-decoration: none; }
+    footer a:hover { color: var(--cream); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 480px) {
+      .steps { flex-direction: column; align-items: center; }
+      .step   { max-width: 100%; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="https://michelleflares.com">michelle<span>flares</span></a>
+    <a class="nav-link" href="https://michelleflares.com/#pricing">Pricing →</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="hero-eyebrow">Preview · Not yet live</span>
+    <h1>Websites built for<br><em>local businesses</em> like yours</h1>
+    <p>Each site below was built specifically for that business. Browse the demos, and if you'd like yours — just get in touch. Live within 72 hours from £99.99.</p>
+    <div class="hero-cta-row">
+      <a class="btn btn-primary" href="#contact">💬 I want a website like this</a>
+      <a class="btn btn-outline"  href="https://michelleflares.com/#pricing">See pricing</a>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how">
+    <p>I build the website first — so you can see exactly what you're getting before you pay a single penny.</p>
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">1</span>
+        <h3>Browse your demo</h3>
+        <p>Click through — it's a real, working website built for your business.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <h3>Like it? Say yes</h3>
+        <p>Pay the £99.99 one-time fee. I'll buy your domain and go live within 72 hours.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <h3>Customers find you</h3>
+        <p>You focus on running your business. I'll handle everything online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO CARDS -->
+  <section class="demos-section">
+    <h2 class="section-title">Demo websites</h2>
+    <p class="section-sub">Click any card to preview that business's website.</p>
+
+    <div class="demos-grid" id="demos-grid">
+
+      <!-- ══ ADD YOUR DEMO CARDS HERE ══
+           Duplicate the block below for each client demo.
+           Update: href, emoji, tag (industry), name, location.
+      -->
+
+      <a class="demo-card" href="./pizza-palace/">
+        <div class="card-thumb">🍕</div>
+        <div class="card-body">
+          <span class="card-tag">Takeaway</span>
+          <span class="card-name">Pizza Palace</span>
+          <span class="card-location">📍 Manchester</span>
+          <span class="card-link">View demo →</span>
+        </div>
+      </a>
+
+      <a class="demo-card" href="./oak-bakery/">
+        <div class="card-thumb">☕</div>
+        <div class="card-body">
+          <span class="card-tag">Café &amp; Bakery</span>
+          <span class="card-name">Oak Bakery</span>
+          <span class="card-location">📍 Bristol</span>
+          <span class="card-link">View demo →</span>
+        </div>
+      </a>
+
+      <a class="demo-card" href="./swift-plumbing/">
+        <div class="card-thumb">🔧</div>
+        <div class="card-body">
+          <span class="card-tag">Plumber</span>
+          <span class="card-name">Swift Plumbing</span>
+          <span class="card-location">📍 Leeds</span>
+          <span class="card-link">View demo →</span>
+        </div>
+      </a>
+
+      <!-- PLACEHOLDER — remove once you have 4+ real demos -->
+      <div class="demo-card placeholder">
+        <div class="card-thumb">✦ coming soon</div>
+        <div class="card-body">
+          <span class="card-tag">Your business</span>
+          <span class="card-name">Could be you</span>
+          <span class="card-location">📍 Anywhere in the UK</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT STRIP -->
+  <section class="contact-strip" id="contact">
+    <h2>Ready to get online? ☕</h2>
+    <p>Message me on WhatsApp or send an email — I'll have a demo ready for your business within 48 hours, no commitment needed.</p>
+    <div class="contact-row">
+      <a class="contact-btn whatsapp" href="https://wa.me/447915897621">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp me
+      </a>
+      <a class="contact-btn email" href="mailto:hello@michelleflares.com">
+        ✉ hello@michelleflares.com
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="https://michelleflares.com">michelleflares.com</a> &nbsp;·&nbsp;
+    © 2026 Michelle Flares &nbsp;·&nbsp;
+    <a href="https://michelleflares.com/privacy">Privacy</a>
+  </footer>
+
+</body>
+</html>
