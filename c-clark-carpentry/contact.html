@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Quote & Contact | C Clark Carpentry | Alcester, Warwickshire</title>
+  <meta name="description" content="Get a free carpentry quote from C Clark Carpentry in Alcester. Call 07972 810298, WhatsApp us, or fill in the form. We cover all of Warwickshire.">
+  <meta name="keywords" content="carpenter free quote Alcester, contact C Clark Carpentry, carpentry estimate Warwickshire, free joinery quote Alcester">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://demo.michelleflares.com/cclark-carpentry/contact.html">
+  <meta name="geo.region" content="GB-WAR">
+  <meta name="geo.placename" content="Alcester">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪵</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --forest: #2D4A3E; --forest-dark: #1a2e26; --cream: #F5F0E8; --warm-white: #FDFAF5; --wood: #8B5E3C; --wood-pale: #F0E0CC; --gold: #C8973D; --text: #1C1C1C; --text-muted: #5A5A5A; --border: #D9D0C0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Lato', sans-serif; color: var(--text); background: var(--warm-white); line-height: 1.7; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(29,46,38,0.97); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: space-between; padding: 0 5%; height: 70px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo-icon { font-size: 1.5rem; }
+    .nav-logo-text { font-family: 'Playfair Display', serif; color: var(--cream); font-size: 1.1rem; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: rgba(245,240,232,0.85); text-decoration: none; font-size: 0.9rem; font-weight: 400; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+    .nav-cta { background: var(--gold); color: var(--forest-dark) !important; padding: 8px 18px; border-radius: 4px; font-weight: 700 !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--cream); border-radius: 2px; }
+    .mobile-menu { display: none; position: fixed; top: 70px; left: 0; right: 0; background: var(--forest-dark); padding: 1.5rem 5%; z-index: 99; border-top: 1px solid rgba(255,255,255,0.1); }
+    .mobile-menu.open { display: block; }
+    .mobile-menu ul { list-style: none; }
+    .mobile-menu ul li { border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .mobile-menu ul a { display: block; padding: 14px 0; color: var(--cream); text-decoration: none; font-size: 1rem; }
+    @media (max-width: 768px) { .nav-links { display: none; } .hamburger { display: flex; } }
+
+    .page-hero { padding: 130px 5% 70px; background: linear-gradient(135deg, var(--forest-dark), var(--forest)); color: #fff; }
+    .page-hero .breadcrumb { font-size: 0.85rem; color: rgba(255,255,255,0.55); margin-bottom: 1rem; }
+    .page-hero .breadcrumb a { color: var(--gold); text-decoration: none; }
+    .page-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+    .page-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.8); max-width: 560px; }
+
+    .contact-section { padding: 80px 5%; }
+    .contact-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 4rem; align-items: start; }
+
+    .section-label { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--wood); margin-bottom: 0.75rem; }
+    h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--forest-dark); margin-bottom: 1rem; }
+
+    /* FORM */
+    .quote-form { background: #fff; border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 24px rgba(45,74,62,0.1); }
+    .quote-form h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--forest-dark); margin-bottom: 0.4rem; }
+    .quote-form p { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 2rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group label { display: block; font-size: 0.88rem; font-weight: 700; color: var(--forest-dark); margin-bottom: 0.4rem; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; padding: 12px 14px; border: 2px solid var(--border);
+      border-radius: 6px; font-family: 'Lato', sans-serif; font-size: 0.97rem;
+      color: var(--text); background: var(--warm-white);
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--forest); }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .checkbox-group { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem; }
+    .checkbox-item { display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.88rem; color: var(--text-muted); }
+    .checkbox-item input[type="checkbox"] { width: auto; border: none; accent-color: var(--forest); }
+    .submit-btn {
+      width: 100%; background: var(--gold); color: var(--forest-dark);
+      padding: 15px; border: none; border-radius: 6px;
+      font-family: 'Lato', sans-serif; font-size: 1rem; font-weight: 700;
+      cursor: pointer; transition: all 0.25s; letter-spacing: 0.02em;
+      margin-top: 0.5rem;
+    }
+    .submit-btn:hover { background: #d4a845; transform: translateY(-1px); }
+    .form-note { font-size: 0.82rem; color: var(--text-muted); text-align: center; margin-top: 0.8rem; }
+
+    /* CONTACT DETAILS */
+    .contact-details { }
+    .contact-card {
+      background: var(--cream); border-radius: 10px; padding: 2rem;
+      margin-bottom: 1.5rem; border-left: 4px solid var(--forest);
+    }
+    .contact-card h3 { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--forest-dark); margin-bottom: 0.5rem; }
+    .contact-card a { color: var(--forest); text-decoration: none; font-weight: 700; font-size: 1.1rem; display: block; margin-bottom: 0.25rem; }
+    .contact-card a:hover { color: var(--gold); }
+    .contact-card .sub { font-size: 0.85rem; color: var(--text-muted); }
+    .whatsapp-card {
+      background: #e8f9ee; border-left-color: #25D366;
+    }
+    .whatsapp-card a { color: #128C7E; }
+    .hours-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 2rem; }
+    .hours-card h3 { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--forest-dark); margin-bottom: 1rem; }
+    .hours-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.92rem; }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-row .day { color: var(--text-muted); }
+    .hours-row .time { font-weight: 700; color: var(--forest-dark); }
+    .hours-row.today { background: var(--wood-pale); margin: 0 -0.5rem; padding: 8px 0.5rem; border-radius: 4px; }
+
+    .response-badge {
+      background: var(--forest-dark); color: #fff;
+      border-radius: 8px; padding: 1.25rem 1.5rem;
+      display: flex; align-items: center; gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .response-badge .icon { font-size: 1.8rem; }
+    .response-badge strong { display: block; color: var(--gold); }
+    .response-badge span { font-size: 0.88rem; color: rgba(255,255,255,0.8); }
+
+    .success-msg { display: none; background: #e8f9ee; border: 2px solid #25D366; border-radius: 8px; padding: 1.5rem; text-align: center; color: var(--forest-dark); margin-top: 1rem; }
+    .success-msg.show { display: block; }
+
+    footer { background: var(--forest-dark); color: rgba(245,240,232,0.75); padding: 40px 5% 25px; }
+    .footer-links { display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .footer-links a { color: rgba(245,240,232,0.7); text-decoration: none; font-size: 0.9rem; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.2rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; font-size: 0.82rem; }
+    .footer-bottom a { color: rgba(245,240,232,0.5); text-decoration: none; }
+    .footer-bottom a:hover { color: var(--gold); }
+    .whatsapp-float { position: fixed; bottom: 24px; right: 24px; z-index: 200; width: 54px; height: 54px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.45); text-decoration: none; color: #fff; transition: transform 0.25s; }
+    .whatsapp-float:hover { transform: scale(1.1); }
+
+    @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 480px) { .form-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <span class="nav-logo-icon">🪵</span>
+    <span class="nav-logo-text">C Clark Carpentry</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="areas.html">Areas Covered</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">Free Quote</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="areas.html">Areas Covered</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a> › Contact & Free Quote</div>
+  <h1>Get your free quote today</h1>
+  <p>Tell us about your project and we'll get back to you within 24 hours to arrange a free site visit and written quote. No obligation whatsoever.</p>
+</div>
+
+<div class="contact-section">
+  <div class="contact-grid">
+
+    <!-- FORM -->
+    <div>
+      <div class="quote-form">
+        <h3>Request a free quote</h3>
+        <p>Fill in a few details about your project and we'll be in touch shortly. All fields marked * are required.</p>
+        <form action="https://formspree.io/f/demo" method="POST" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your name *</label>
+              <input type="text" id="name" name="name" placeholder="e.g. James Whitfield" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g. 07700 900000" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.co.uk" required>
+          </div>
+          <div class="form-group">
+            <label for="postcode">Your postcode *</label>
+            <input type="text" id="postcode" name="postcode" placeholder="e.g. B49 6AA" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Type of work *</label>
+            <select id="service" name="service" required>
+              <option value="">— Please select —</option>
+              <option value="kitchen">Fitted kitchen</option>
+              <option value="furniture">Bespoke furniture / wardrobes</option>
+              <option value="staircase">Staircase or balustrade</option>
+              <option value="doors">Doors, skirting or architrave</option>
+              <option value="loft">Loft boarding or storage</option>
+              <option value="flooring">Flooring</option>
+              <option value="general">General joinery / repair</option>
+              <option value="other">Other — I'll describe below</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>I'd also like to discuss: (optional)</label>
+            <div class="checkbox-group">
+              <label class="checkbox-item"><input type="checkbox" name="extras" value="decking"> Decking</label>
+              <label class="checkbox-item"><input type="checkbox" name="extras" value="fencing"> Fencing</label>
+              <label class="checkbox-item"><input type="checkbox" name="extras" value="flatpack"> Flat-pack assembly</label>
+              <label class="checkbox-item"><input type="checkbox" name="extras" value="repairs"> Repairs / maintenance</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your project *</label>
+            <textarea id="message" name="message" placeholder="Please describe what you're looking for — size, materials, timescale, any photos you can share on WhatsApp, etc." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="timeline">When are you looking to start?</label>
+            <select id="timeline" name="timeline">
+              <option value="">— Not sure yet —</option>
+              <option value="asap">As soon as possible</option>
+              <option value="1month">Within the next month</option>
+              <option value="3months">Within 3 months</option>
+              <option value="6months">Within 6 months</option>
+              <option value="planning">Just planning ahead</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">Send my quote request →</button>
+          <p class="form-note">🔒 Your details are never shared. We'll respond within 24 hours.</p>
+        </form>
+        <div class="success-msg" id="success-msg">
+          <strong>✅ Thank you — quote request received!</strong><br>
+          We'll be in touch within 24 hours to discuss your project and arrange a free site visit.
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT DETAILS -->
+    <div class="contact-details">
+      <div class="section-label">Get in touch directly</div>
+      <h2>We're always happy to chat</h2>
+
+      <div class="contact-card">
+        <h3>📞 Phone</h3>
+        <a href="tel:+447972810298">07972 810298</a>
+        <span class="sub">Mon–Sat 8am–8pm · Sun 10am–6pm</span>
+      </div>
+
+      <div class="contact-card whatsapp-card">
+        <h3>💬 WhatsApp</h3>
+        <a href="https://wa.me/447972810298?text=Hi%20Craig%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener">Message us on WhatsApp</a>
+        <span class="sub">Send photos of your project — we love to see what you're working with</span>
+      </div>
+
+      <div class="contact-card">
+        <h3>✉ Email</h3>
+        <a href="mailto:info@cclarkcarpentry.co.uk">info@cclarkcarpentry.co.uk</a>
+        <span class="sub">We respond to all emails within one working day</span>
+      </div>
+
+      <div class="contact-card">
+        <h3>📍 Address</h3>
+        <span style="font-size:1rem; font-weight:700; color:var(--forest-dark);">38 School Road, Alcester, B49 5DF</span>
+        <br><br>
+        <a href="https://maps.google.com/?q=38+School+Road,+Alcester+B49+5DF" target="_blank" rel="noopener" style="font-size:0.9rem;">View on Google Maps →</a>
+      </div>
+
+      <div class="hours-card">
+        <h3>🕐 Opening hours</h3>
+        <div class="hours-row"><span class="day">Monday</span><span class="time">8:00 am – 8:00 pm</span></div>
+        <div class="hours-row"><span class="day">Tuesday</span><span class="time">8:00 am – 8:00 pm</span></div>
+        <div class="hours-row"><span class="day">Wednesday</span><span class="time">8:00 am – 8:00 pm</span></div>
+        <div class="hours-row"><span class="day">Thursday</span><span class="time">8:00 am – 8:00 pm</span></div>
+        <div class="hours-row"><span class="day">Friday</span><span class="time">8:00 am – 8:00 pm</span></div>
+        <div class="hours-row"><span class="day">Saturday</span><span class="time">8:00 am – 8:00 pm</span></div>
+        <div class="hours-row"><span class="day">Sunday</span><span class="time">10:00 am – 6:00 pm</span></div>
+      </div>
+
+      <div class="response-badge">
+        <span class="icon">⚡</span>
+        <div>
+          <strong>Typical response: within 24 hours</strong>
+          <span>We aim to reply to all enquiries on the same working day</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="areas.html">Areas Covered</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 C Clark Carpentry · 38 School Road, Alcester, B49 5DF · <a href="tel:+447972810298">07972 810298</a></p>
+    <a href="https://michelleflares.com" target="_blank" rel="noopener">Website by michelleflares.com</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/447972810298?text=Hi%20Craig%2C%20I%27d%20like%20a%20quote%20for%20some%20carpentry%20work." class="whatsapp-float" aria-label="WhatsApp" target="_blank" rel="noopener">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+  function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('open'); }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById('success-msg').classList.add('show');
+    e.target.reset();
+    e.target.style.display = 'none';
+  }
+</script>
+</body>
+</html>
